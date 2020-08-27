@@ -20,20 +20,20 @@ Starting in file "ltsm_stock_predcitor_closing" we will look at LTSM RNN (Long S
 
 ### Loss
 LTSM Stock Predictor using FNG data had a higher loss than using closing prices. This loss translates into the vast separation between Real and Predicted values as shown clearly by the plot. 
-![LTSM_FNG_Plot](./images/FNG_Plot.png)
+![LTSM_FNG_Plot](./Instructions/Starter_Code/images/FNG_Plot.png)
 
 LTSM Stock Predictor using Closing data had much less variance between the real and predicted values, as well as a much lower loss. The predicted values are lower than the actual, but follow along roughly the same pattern as actual data. 
-![LTSM_CLOSE_Plot](./images/CLOSE_Plot.png)
+![LTSM_CLOSE_Plot](./Instructions/Starter_Code/images/CLOSE_Plot.png)
 
 ### Window Size
 As the window size increased from 1-10, the predicted values smoothed. 
 For the FNG Data, a window size of 5 allowed better visualization of potential dips in the stock value. It did not account for spikes. 
-![FNG_Window_5](./images/FNG_5.png)
+![FNG_Window_5](./Instructions/Starter_Code/images/FNG_5.png)
 
 For the Close Data, an increase in window size to 5 proved to take away too much variance in the predicted graph. Although it still showed the upward trend, various smaller increases and dips were not visible. CLOSE_
-![CLOSE_Window_5](./images/CLOSE_5.png)
+![CLOSE_Window_5](./Instructions/Starter_Code/images/CLOSE_5.png)
 
 By the time both graphs reach a window size of 10, the use of the predicted trend line goes down drastically. For the FNG data, a window size near 5 is ideal. The Close data needs a smaller window size under 5 to be best beneficial to the user. 
 
-![FNG_WINDOW_10](./images/FNG_10.png)
-![CLOSE_WINDOW_10](./images/CLOSE_10.png)
+![FNG_WINDOW_10](./Instructions/Starter_Code/images/FNG_10.png)
+![CLOSE_WINDOW_10](./Instructions/Starter_Code/images/CLOSE_10.png)
